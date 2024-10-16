@@ -1,4 +1,4 @@
-#!/bin/bash 
+#BSUB -L /bin/bash
 #BSUB -P acc_DADisorders
 #BSUB -q premium
 #BSUB -n 1
@@ -14,3 +14,5 @@ module load openssl
 module load udunits
 
 R CMD BATCH DWLS_fromsignaturematrix.R
+
+##note: this shell script is for runnning the R script DWLS_fromsignaturematrix.R
